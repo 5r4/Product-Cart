@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+:root {
+    /* # Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* # Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    /* font-size: 14px; */
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+}
+
+.cart {
+    /* position: absolute; */
+    background-color: var(--White);
+    display: flex;
+    width: 70vh;
+    height: 52vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart img {
+    /* position: absolute; */
+    width: 31vh;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    /* padding: 2px; */
+}
+
+.product-details {
+    /* margin-left: 10px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 100%;
+    word-wrap: break-word;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.product-details .title {
+    font-family: "Fraunces", serif;
+    font-size: 22px;
+    font-weight: 700;
+    /* width: 25vh; */
+    padding-top: 16px;
+    color: var(--Very-dark-blue);
+}
+
+.product-details .t {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-details p {
+    padding-top: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Dark-grayish-blue);
+}
+
+.product-details .prize {
+    padding-top: 30px;
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+}
+
+.product-details .prize del {
+    font-family: "Fraunces", serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    color: var(--Dark-grayish-blue);
+    justify-content: center;
+}
+
+.product-details .add-to-cart {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-size: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 0;
+    margin-top: 8px;
+
+    border-radius: 10px;
+
+    transition: 0.4s;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.product-details .add-to-cart:hover {
+    background-color: var(--Very-dark-blue);
+}
