@@ -33,6 +33,7 @@ body {
     height: 52vh;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 .cart img {
@@ -118,4 +119,13 @@ body {
 
 .product-details .add-to-cart:hover {
     background-color: var(--Very-dark-blue);
+}
+
+@media screen and (max-width: 500px) {
+    .cart {
+        width: 50vh;
+    }
+    .cart img {
+        display: none;
+    }
 }
